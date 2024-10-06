@@ -1,0 +1,455 @@
+Ricerca per BASE
+00 10 21 00 00 00 00 00 ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** 80 00 E0 01 80 0C 5A 27 08 00 40 03 00 00 00 00
+
+
+BASE + 9 C480	Uso Oggetti?
+BASE + 9 C481	Oggetto usato?
+
+BASE + 9 C8D8	Livello ( rosso 1b + verde 1b + blu 1b)
+BASE + 9 C8FC	Esperienza ( rosso 1b + verde 1b + blu 1b)	
+
+BASE + 9 C8E4	Eventi (Achievements 255x1b)
+BASE + 9 C9E9	Eventi 2 (Stato)
+
+BASE + 9 CBE4	#Oggetti (255x1b) -> Index = Id Oggetti Inventario
+BASE + 9 CCE4	Inventario (255x1b)
+BASE + 9 CDE4	#ElementiInventario (1b)
+BASE + 9 CDE6	Tipo Ordinamento 1b (o 2b)
+
+BASE + 9 CDF2	Arma equipaggiata (1b)
+BASE + 9 CDF3	Pantaloni equipaggiati (1b)
+
+
+9CB45 -> Dondolamento 00 .. 02
+9CB46 -> Stato fungo viola 00 .. 01
+9CB4E -> Stato Charles Banane
+	00 A terra
+	01 Albero
+9C4B8 -> Fisarmonica 1 00 .. 01
+
+9CBB9 -> #Fisarmoniche premute
+
+Livello = 00 .. 09 -> 1 .. 10
+Esperienza = 00 .. 3C -> #nemici * 6
+
+Eventi
+	+00 Braccialetto del nonno		(P 01)
+	+01 Saggio centenario 			(P 03)
+	+02 Cancella la nebbia			(P 02)
+	+03 Portami a casa			(S X7+5)
+	+04 Circuito motocross			(S X7+7)
+	+05 Chi sei				(S X7+8)
+	+06 -
+	+07 Nascondino				(S A+4)
+	+08 Non so nuotare			(P 4+5)
+	+09 Nelle uova di Kokka			(P 04)
+	+0A Racconto maiali cattivi		(P 05)
+	+0B Il vecchio millenario		(P 2+7)
+	+0C Grande gnomo			(P 09)
+	+0D Gnomese da principiante		(P 06)
+	+0E Bimbo smarrito			(P 08)
+	+0F Semi di fiori			(S 9+8)
+	+10 Cassetta AP				(S 7+9)
+	+11 Salva gli gnomi			(P 07)
+	+12 X
+	+13 Oggetti smarriti			(S C+3)
+	+14 Interrompi la lite!			(S 8+1)
+	+15 La grande fuga			(S 8+2)
+	+16 Guarda e vedi?!			(S 8+3)
+	+17 Miglior amico dell'uomo		(S B+9)
+	+18 Cos'è?				(S B+5)
+	+19 Tesori della casa			(S 9+1)
+	+1A Al monte della fenice…		(P 2+3)
+	+1B La fontana rotta			(S 9+5)
+	+1C Una casa familiare			(S 9+2)
+	+1D Sacco del maiale furioso		(P 3+5)
+	+1E Monte della fenice			(P 3+6)
+	+1F Da dove sono venuto?		(S 9+A)
+	+20 -
+	+21 Il famoso scavatore			(S C+6)
+	+22 Cave di lava			(P 3+A)
+	+23 Il signore dei cieli		(P 4+2)
+	+24 Cos'è un funga?			(S B+2)
+	+25 Caccia ai mostri			(S 8+6)
+	+26 Succo del frutto mortale		(S 9+7)
+	+27 Pianta un giardino			(S 9+9)
+	+28 Lacrime di un fiore			(S C+1)
+	+29 Sorridi!				(P 3+9)
+	+2A Piangi bimbo			(S A+2)
+	+2B Non smette di piangere		(S 9+6)
+	+2C L'indovina rossa			(S 9+4)
+	+2D -
+	+2E Dov'è il topolino			(P 2+4)
+	+2F Del formaggio per favore		(S C+A)
+	+30 -
+	+31 Una bibita da grandi		(P 2+6)
+	+32 Strada lago di Bacco		(P 2+5)
+	+33 Una piccola serratura		(P 2+A)
+	+34 -
+	+35 Il sacco del maiale topo		(P 3+2)
+	+36 La casa stregata			(P 3+A)
+	+37 Una grande serratura!		(P 2+9)
+	+38 Quadro di grande chiave?		(P 2+8)
+	+39 Rompi l'uovo magico!		(P 3+1)
+	+3A Poteri rossi nascosti		(S A+3)
+	+3B -
+	+3C -
+	+3D -
+	+3E L'albero del sapere			(S B+6)
+	+3F Le rocce fisarmonica		(S D+5)
+	+40 Una bibita rinfrescante		(P 4+4)
+	+41 Voglio bottiglia lacrime		(S 7+A)
+	+42 -
+	+43 -
+	+44 -
+	+45 -
+	+46 -
+	+47 -
+	+48 -
+	+49 Ci serve potere…			(P 4+8)
+	+4A -
+	+4B -
+	+4C -
+	+4D La macchina della civiltà		(P 4+9)
+	+4E Trova Charles!			(P 4+3)
+	+4F E sotto la foresta?			(P 5+3)
+	+50 Foresta dei 100 fiori		(P 6+4)
+	+51 Il tesoro del capo			(S E+2)
+	+52 Ho così fame			(S A+5)
+	+53 -
+	+54 -
+	+55 Maiale foresta selvaggia		(P 5+2)
+	+56 Erbe curative per Baron		(S A+1)
+	+57 Primizia del sapere			(S B+7)
+	+58 Alghe per la tua salute		(S B+8)
+	+59 -
+	+5A Poteri blu nascosti			(S D+1)
+	+5B -
+	+5C -
+	+5D -
+	+5E -
+	+5F -
+	+60 -
+	+61 -
+	+62 -
+	+63 -
+	+64 -
+	+65 -
+	+66 Rompi la porta!			(P 4+7)
+	+67 La strega carina			(S B+3)
+	+68 Cibo per carburante?		(S A+8)
+	+69 Mi serve una bomba			(P 4+6)
+	+6A -
+	+6B -
+	+6C -
+	+6D -
+	+6E -
+	+6F Villaggio di Bacco			(P 4+A)
+	+70 La collana della sirena		(P 5+5)
+	+71 Forza di Baron			(S B+A)
+	+72 Che ha perso la strega…		(S C+2)
+	+73 Un fungo sicuro?			(S 8+A)
+	+74 Accendere gli strumenti!?		(S C+7)
+	+75 -
+	+76 Vecchio di 10.000 anni		(P 5+4)
+	+77 Cibo del pesce poderoso		(S D+3)
+	+78 Facciamo dei dolcetti!		(S C+5)
+	+79 Scoglio della sirena 		(S A+9)
+	+7A -
+	+7B Sacco maiale subacqueo		(P 5+8)
+	+7C Villaggio Trucco			(P 5+9)
+	+7D La porta del ladro			(P 5+A)
+	+7E Le 10 perle matematiche		(P 5+7)
+	+7F I 5 oggetti d'oro			(P D+2)
+	+80 Filo indistruttibile		(P 6+1)
+	+81 Poteri verdi nascosti		(S D+6)
+	+82 -
+	+83 -
+	+84 Prendine due			(S C+8)
+	+85 Voglio il bronzo			(S A+A)
+	+86 Voglio medaglia d'argento		(S B+1)
+	+87 Voglio medaglia d'oro		(S E+3)
+	+88 -
+	+89 -
+	+8A -
+	+8B -
+	+8C -
+	+8D -
+	+8E -
+	+8F -
+	+90 Desiderio millenario		(P 6+5)
+	+91 Scava come una talpa		(P 6+3)
+	+92 L'indovino blu			(S C+4)
+	+93 -
+	+94 -
+	+95 -
+	+96 Risaliamo le rapide!		(S B+4)
+	+97 Prendi				(S C+A)
+	+98 -
+	+99 Cosa c'è sott'acqua?		(P 5+6)
+	+9A -
+	+9B -
+	+9C Fonte di magia maligna		(P 6+2)
+	+9D Sette amici				(P 6+7)
+	+9E -
+	+9F 8° sacco del maiale?		(P 6+6)
+	+A0 Un vero maiale cattivo		(P 6+8)
+	+A1 Tesoro sotterrato			(S C+9)
+	+A2 -
+	+A3 -
+	+A4 La torre dei fiori			(S E+6)
+	+A5 -
+	+A6 Scimmia affamata			(S 7+6)	
+	+A7 Gas del fiore di pesco		(S E+5)
+	+A8 Il sacco del maiale			(P 10)
+	+A9 Fiore pianta carnivora		(S D+8)
+	+AA Al calmarsi del vento…		(S A+6)
+	+AB Il preferito della fenice		(P 4+1)
+	+AC Sacco del maiale di fuoco		(P 3+7)
+	+AD Pantaloni di Charles		(S 9+3)
+	+AE Sacco del maiale stregato		(P 3+3)
+	+AF Il sorriso più grande		(P 2+1)
+	+B0 Il broncio più grande		(P 2+2)
+	+B1 Cosa bolle in pentola?		(S D+7)
+	+B2 Farfalle a foglia			(S A+7)
+	+B3 Dove sono le luci?			(S 8+1)
+	+B4 Dove rotola il barile…		(S E+4)
+	+B5 Pronti, attenti, via!		(S 8+5)
+	+B6 Uno specchio magico?		(S C+4)
+	+B7 Sacco maiale di giungla		(P 5+1)
+	+B8 -
+	+B9 Scrigno del tesoro?			(P 3+4)
+	+BA -
+	+BB Fungo misterioso			(S 8+7)
+	+BC Scivolo di foglie			(S 8+8)
+	+BD Rosso + Blu = ?			(S 8+9)
+	+BE Il ladro inquieto			(S D+A)
+	+BF Cosa ha scordato il ladro		(S E+1)
+	x62 -
+	x1 -> rende visibili gli altri nascosti come Fiore pianta carnivora)
+
+Eventi 2
+	Dialogo iniziale esploratore 00 .. 04	
+
+Tipo Ordinamento = 00..03
+
+Arma equipaggiata
+	00 Sfollagente
+	05 Boomerang di legno
+	06 Boomerang di pietra
+	07 Boomerang di ferro
+	08 Acchiappa
+	09 Acchiappagente
+Pantaloni equipaggiati
+	00 Pantaloni normali
+	01 Pantaloni salterini
+	02 Pantaloni scattanti
+	03 Pantaloni lampo
+
+
+
+Id Oggetti Inventario
+	00 Pulcine					M	(ERR?)
+	01 Rana						M
+	02 Gnomo smarrito			M
+	03 Banane					M*
+	04 Forte tornado			M
+	05 Campana centenaria		
+	06 Chiave vecchia			-
+	07 Ali della carità			 *
+	08 Fiore pianta carnivora	M*
+	09 Fungo guaritore			 *
+	0A Secchio					M
+	0B Telescopio				M
+	0C Vaso lacrime				M
+	0D Lacrime dei fiori		M
+	0E Baron					M
+	0F Patate dolci arrosto		M
+	10 Farfalle a foglia		M*
+	11 Torcia					M
+	12 Secchio d'acqua			M
+	13 Specchio sporco			M
+	14 Ombrellino				E
+	15 Boomerang di legno		E
+	16 Boomerang di pietra		E
+	17 Boomerang di ferro		E
+	18 Pantaloni scattanti		E
+	19 Mappa					M ?
+	1A Vaso rotto				M
+	1B Sfollagente				E
+	1C Pantaloni lampo			E
+	1D Pantaloni salterini		E
+	1E Sacchetto pranzo			 *
+	1F Sacchettone pranzo		 *
+	20 Pantaloni normale		E
+	21 Acchiappa				E
+	22 "Acchiappagente"			E
+	23 Maialino					M
+	24 Chiave millenaria		-
+	25 Sacco rosso del maiale	M
+	26 Sacco arancione			M
+	27 Sacco giallo del maiale	M
+	28 Sacco verde del maiale	M
+	29 Sacco blu del maiale		M
+	2A Sacco blu scuro			M
+	2B Sacco rosa del maiale	M
+	2C Chiave dai 10.000 anni	-
+	2D Chiave millenaria		-
+	2E Pannello chiave 1		M
+	2F Pannello chiave 2		M
+	30 Pannello chiave 3		M
+	31 Pannello chiave 4		M
+	32 Pannello chiave 5		M
+	33 Lancetta del carburante	M
+	34 Essenza di pioggia		M
+	35 Chiave grande			-
+	36 Chiave piccola			-
+	37 Formaggio				M*
+	38 Specchio magico			M
+	39 Mappa strappata 1		M ?
+	3A Mappa strappata 2		M ?
+	3B Guanti di gomma			M ?
+	3C Bomba					M
+	3D Ferro					M ?
+	3E Ruota di ferro			M ?
+	3F Semi di fiori			M
+	40 Tubo						M ?
+	41 Vino						M
+	42 Fiore Bunk				M*
+	43 Perla matematica 1		M
+	44 Perla matematica 2		M
+	45 Perla matematica 3		M
+	46 Perla matematica 4		M
+	47 Perla matematica 5		M
+	48 Perla matematica 6		M
+	49 Perla matematica 7		M
+	4A Perla matematica 8		M
+	4B Perla matematica 9		M
+	4C Perla matematica 10		M
+	4D OGGETTI					M ?			Perla matematica 11
+	4E OGGETTI					M ?			Perla matematica 12
+	4F OGGETTI					M ?			Perla matematica 13
+	50 OGGETTI					M ?			Perla matematica 14
+	51 OGGETTI					M ?			Perla matematica 15
+	52 OGGETTI					M ?			Campana
+	53 OGGETTI					M ?			Campana
+	54 OGGETTI					M ?
+	55 OGGETTI					M ?
+	56 OGGETTI					M ?			Animale
+	57 Medaglia di bronzo		M
+	58 Medaglia d'argento		M
+	59 Medaglia d'oro			M
+	5A Lettera					M ?
+	5B Legno					M ?
+	5C Rapide					M
+	5D Farfalla a foglia d'oro	M
+	5E Frutto d'oro				M
+	5F Fiore d'oro				M
+	60 Pesce esoterico			E
+	61 Pala						M ?
+	62 Gioiello del fuoco		E
+	63 Gioiello dell'acqua		E
+	64 Gioiello del vento		E
+	65 Pesce poderoso			M
+	66 Polvere argentata
+	67 Melassa
+	68 Artiglio di Kokka		 *
+	69 Spina di Butamushi		 *
+	6A Dente di Tartalligatore	 *
+	6B OGGETTI					E ?			Margherita
+	6C Anguilla elettrica		E ?
+	6D Acqua nera				E ?
+	6E Dolcetto rosso			 *?
+	6F Dolcetto blu				 *?
+	70 Dolcetto verde			 *?
+	71 Dolcetto nero			 *?
+	72 Dolcetto argentato		 *?
+	73 Dolcetto d'oro			M
+	74 Fungo proibito			M ?
+	75 Polvere blu				M
+	76 Noci di cocco			M*?
+	77 Pelle di Funga			M ?
+	78 Braccialetto del nonno	M
+	79 Diserbante				M
+	7A Albero di Funga			M ?
+	7B Linfa di Funga			M ?
+	7C Campana millenaria		
+	7D Tamburo Funga			M
+	7E Cibo pesce poderoso		M
+	7F Chiave insolita			M ?
+	80 Fungo che sogghigna		M ?
+	81 Fungo che piagnucola		M ?
+	82 Fungo misterioso
+	83 Oggetti					M ?
+	84 Pesce sacro				E
+	85 Pulcino					M	(ERR)
+	86 Pulcino					M	(ERR)
+	87 Vascetta d'oro			M ?
+	88 Lacrime di fiori			M ?
+	89 OGGETTI					M ?
+	8A "Cresci e splendi"		M
+	8B Succo di banana			M
+	8C OGGETTI					M ?
+	8D Pantaloni di Charles		M
+	8E Tre sfere di cristallo	M
+	8F Cosa ha perso il ladro	M
+	90 Gioiello del capo		M
+	91 Gioiello del capo		M
+	92 Fungo normale
+	93 OGGETTI					M ?
+	94 Collana a conchiglia		M
+	95 Filo del ladro			M
+	96 Filo resistente			M
+	97 Campana dai 10.000 anni	
+	98 Campana millenaria		
+	99 Anti raffreddore			M
+	9A Sacchetto pranzo Yan		M
+	9B Chiave vecchio stagno	-
+	9C Erbe curative			M
+	9D Frutto del sapere		M
+	9E Alghe					M
+	9F Cappello del minatore 	M ?
+	A0 Pulcino					M ? (ERR)
+	A1 Pulcino					M ? (ERR)
+	A2 Pulcino					M ? (ERR)
+	A3 Pulcino					M ? (ERR)
+	A4 Pulcino					M ? (ERR)
+	A5 Pulcino					M ? (ERR)
+	A6 Pulcino					M ? (ERR)
+	A7 Pulcino					M ? (ERR)
+	A8 Pulcino					M ? (ERR)
+	A9 Pulcino					M ? (ERR)
+	AA Pulcino					M ? (ERR)
+	AB Pulcino					M ? (ERR)
+	AC Pulcino					M ? (ERR)
+	AD Pulcino					M ? (ERR)
+	AE Pulcino					M ? (ERR)
+	AF Pulcino					M ? (ERR)
+	B0 Pulcino					M ? (ERR)
+	B1 Pulcino					M ? (ERR)
+	B2 Pulcino					M ? (ERR)
+	B3 Pulcino					M ? (ERR)
+	B4 Pulcino					M ? (ERR)
+	B5 Pulcino					M ? (ERR)
+	B6 Pulcino					M ? (ERR)
+	B7 Pulcino					M ? (ERR)
+	B8 Pulcino					M ? (ERR)
+	B9 Pulcino					M ? (ERR)
+	BA Pulcino					M ? (ERR)
+	BB Pulcino					M ? (ERR)
+	BC Pulcino					M ? (ERR)
+	BD Pulcino					M ? (ERR)
+	BE Pulcino					M ? (ERR)
+	BF Pulcino					M ? (ERR)
+	C0 Pulcino					M ? (ERR)
+	C1 Pulcino					M ? (ERR)
+	C2 Pulcino					M ? (ERR)
+	C3 Pulcino					M ? (ERR)
+	C4 Pulcino					M ? (ERR)
+	C5 Pulcino					M ? (ERR)
+	C6 Pulcino					M ? (ERR)
+	C7 Pulcino					M ? (ERR)
+	C8..FF CRASH
+	
+
+	
